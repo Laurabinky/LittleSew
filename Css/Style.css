@@ -56,9 +56,9 @@ li{
     margin: 1em;
 }
 
-
 h1{
     margin-top: 2%;
+    font-size: 2em;
 }
 h2, h3{
     margin-top: 2%;
@@ -75,28 +75,30 @@ img {
 
 #fabric article{
     display: flex;
-    flex-direction: column;
-    justify-content: right;
+    flex-direction: row;
+    width: auto;
 }
 #fabric ul{
     display: flex;
     flex-direction: row;
 }
-#fabric section{
+
+#about-us article{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    width: 70%;
+    width: auto;
 }
-
 #about-us p:last-of-type{
     margin-bottom: 2%;
+}
+#about-us figure :first-child{
+    width: 80%;
 }
 #about-us img{
     display: block;
     margin-top: 2%;
 }
-
+ 
 #contact main img{
     width: 50px;
 }
