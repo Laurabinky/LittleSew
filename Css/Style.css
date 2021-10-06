@@ -8,7 +8,6 @@ body {
     font-weight: 500;
     margin-left: 10%;
     color:indigo;
-    /* width: 2w; */
     margin: 10px;
     background-color:floralwhite;
 }
@@ -20,6 +19,29 @@ footer {
     border-top-style: solid;
 }
 
+/* deze standaarden gelden voor alle pagina's */
+
+figure{
+    display: block;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    width: 60%;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+/* De figure en de article zijn voor de flexbox die ik geplaatst heb op de 
+fabrics pagina en de about-us pagina */
+
+img{
+    width: 32%;
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -29,11 +51,18 @@ nav ul{
     border: rgb(255, 183, 193);
     border-bottom-style: solid;
 }
+nav a{
+    color: indigo;
+    transition: all 350ms ease;
+}
 nav a:hover{
     color:rosybrown;
     border-color: pink;
     border-style: solid;
 }
+
+/* Met de hover zorg ik dat men weet dat ze erop kunnen klikken, ook heb ik
+gezorgd dat de overgang wat langzamer ging zodat het niet plotseling is. */
 
 header{
     display: flex;
@@ -45,12 +74,9 @@ header nav{
 header img{
     width: 20%;
 }
-/* nav ul :first-child{ 
-    margin-right: auto;
-}
-nav img{
-    width: 80%;  
-} */
+
+/* De header bevat een flexbox om de linkjes naast elkaar te krijgen en 
+het logo erbij te houden. */
 
 li{
     margin: 1em;
@@ -64,41 +90,26 @@ h2, h3{
     margin-top: 2%;
 }
 
-img {
-    width: 30%;
-}
 
-#home figure{
-    margin-bottom: 2%;
-    margin-top: 1%;
-}
-
-#fabric article{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-}
 #fabric ul{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-#about-us article{
-    display: flex;
-    flex-direction: row;
-    width: auto;
+#fabric img{
+    width: 60%;
 }
-#about-us p:last-of-type{
-    margin-bottom: 2%;
-}
-#about-us figure :first-child{
+/* De id is voor de ul's die op de fabric page staan. Als deze er niet is
+moeten en 12 classes worden toegevoegd.  */
+.width :first-child{
     width: 80%;
 }
-#about-us img{
-    display: block;
-    margin-top: 2%;
+/* De class is gebruikt als oplossing om dit item toch een andere grote 
+te geven ten opzichte van de andere imgs. */
+
+a>img{
+    width: 6%;
 }
- 
-#contact main img{
-    width: 50px;
-}
+/* De direct child is een oplossing om geen class of id te gebruiken voor deze
+pagina. */
