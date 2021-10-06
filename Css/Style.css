@@ -1,0 +1,115 @@
+*{
+    padding: 0;   
+    margin:0;
+}
+body {
+    font-family: cursive;
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 10%;
+    color:indigo;
+    margin: 10px;
+    background-color:floralwhite;
+}
+
+footer { 
+    background-color: rgb(255, 183, 193);
+    opacity: 0.3;
+    margin-top: 5%;
+    border-top-style: solid;
+}
+
+/* deze standaarden gelden voor alle pagina's */
+
+figure{
+    display: block;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    width: 60%;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+/* De figure en de article zijn voor de flexbox die ik geplaatst heb op de 
+fabrics pagina en de about-us pagina */
+
+img{
+    width: 32%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding-right: 10%;
+    border: rgb(255, 183, 193);
+    border-bottom-style: solid;
+}
+nav a{
+    color: indigo;
+    transition: all 350ms ease;
+}
+nav a:hover{
+    color:rosybrown;
+    border-color: pink;
+    border-style: solid;
+}
+
+/* Met de hover zorg ik dat men weet dat ze erop kunnen klikken, ook heb ik
+gezorgd dat de overgang wat langzamer ging zodat het niet plotseling is. */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+header nav{
+    width: 100%;
+}
+header img{
+    width: 20%;
+}
+
+/* De header bevat een flexbox om de linkjes naast elkaar te krijgen en 
+het logo erbij te houden. */
+
+li{
+    margin: 1em;
+}
+
+h1{
+    margin-top: 2%;
+    font-size: 2em;
+}
+h2, h3{
+    margin-top: 2%;
+}
+
+
+#fabric ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#fabric img{
+    width: 60%;
+}
+/* De id is voor de ul's die op de fabric page staan. Als deze er niet is
+moeten en 12 classes worden toegevoegd.  */
+.width :first-child{
+    width: 80%;
+}
+/* De class is gebruikt als oplossing om dit item toch een andere grote 
+te geven ten opzichte van de andere imgs. */
+
+a>img{
+    width: 6%;
+}
+/* De direct child is een oplossing om geen class of id te gebruiken voor deze
+pagina. */
