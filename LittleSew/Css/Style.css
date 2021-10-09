@@ -4,7 +4,7 @@
 }
 body {
     font-family: cursive;
-    font-size: 1em;
+    /* font-size: 1em; */
     font-weight: 500;
     margin-left: 10%;
     color:indigo;
@@ -56,13 +56,17 @@ nav a{
     transition: all 350ms ease;
 }
 nav a:hover{
-    color:rosybrown;
-    border-color: pink;
+    color:pink;
+    border-color: indigo;
+    background-color: indigo;
     border-style: solid;
 }
-
 /* Met de hover zorg ik dat men weet dat ze erop kunnen klikken, ook heb ik
 gezorgd dat de overgang wat langzamer ging zodat het niet plotseling is. */
+nav a:active{
+    color: orchid;
+}
+/* De active is om te laten zien dat hij bezig is met laden */
 
 header{
     display: flex;
